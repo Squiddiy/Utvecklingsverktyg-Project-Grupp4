@@ -1,6 +1,4 @@
-//package ...;
-
-import java.util.ArrayList;
+package david;
 
 public class Book {
 
