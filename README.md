@@ -1,5 +1,8 @@
 # Utvecklingsverktyg-Project-Grupp4
  
+A simple collection Program.
+supporting Books, Games and Movies
+ 
 How to build
 
 First way
