@@ -18,6 +18,7 @@ public class GameCollection {
 	public void addGame(Game game) {
 		games.add(game);
 	}
+	
 	public void removeGame(String gameName) throws GameNotFoundException
 	{
 		for (Game game : games) {

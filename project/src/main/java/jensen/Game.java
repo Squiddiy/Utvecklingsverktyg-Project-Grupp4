@@ -24,7 +24,7 @@ public class Game {
 		this.reviewScore = reviewScore;
 	}
 
-	public gameRating getRating() {
+	public gameRating GetRating() {
 		return rating;
 	}
 

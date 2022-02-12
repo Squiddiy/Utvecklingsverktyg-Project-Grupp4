@@ -18,12 +18,12 @@ public class GameCollectionTest {
 	}
 
 	@Test
-	public void testHowManyGames() {
+	public void TestHowManyGames() {
 		assertTrue(gc.howManyGames() == 1);
 	}
 
 	@Test
-	public void testAddGame() {
+	public void TestAddGame() {
 		int length = gc.howManyGames();
 		Game game1 = new Game("Bumblebee", "Sega", "Haruka", Game.gameRating.C, 5);
 		gc.addGame(game1);
@@ -31,7 +31,7 @@ public class GameCollectionTest {
 	}
 
 	@Test
-	public void testRemoveGame() {
+	public void TestRemoveGame() {
 		try {
 			int length = gc.howManyGames();
 			gc.removeGame("Legend Of Zelda");
@@ -42,7 +42,7 @@ public class GameCollectionTest {
 	}
 
 	@Test
-	public void testFindGame() {
+	public void TestFindGame() {
 		try {
 			Game game2 = gc.findGame("Legend Of Zelda");
 			assertEquals(game, game2);
@@ -52,7 +52,7 @@ public class GameCollectionTest {
 	}
 
 	@Test
-	public void testFindGameIgnoringCase() {
+	public void TestFindGameIgnoringCase() {
 		try {
 			Game game2 = gc.findGame("lEGenD OF zElDA");
 			assertEquals(game, game2);
@@ -62,7 +62,7 @@ public class GameCollectionTest {
 	}
 
 	@Test
-	public void testFindGameIgnoringSpaces() {
+	public void TestFindGameIgnoringSpaces() {
 		try {
 			Game game2 = gc.findGame("    Legend Of Zelda      ");
 			assertEquals(game, game2);
@@ -72,7 +72,7 @@ public class GameCollectionTest {
 	}
 
 	@Test
-	public void testToFindGameThatDosentExist() {
+	public void TestToFindGameThatDosentExist() {
 		assertThrows(GameNotFoundException.class, () -> gc.findGame("Mortal Kombat 7"));
 	}
 
