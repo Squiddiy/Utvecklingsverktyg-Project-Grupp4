@@ -11,6 +11,7 @@ Second way
 1. Setup Jenkins so it works for your computer
 2. Click "Add new Item" and choose "Freestyle Proejct" give resonable name and click ok
 3. Choose "Git" Under "Source cood management" and add this repo
+4. Choose ur maven version under "build"
 6. add build step "Invoke top level maven-targets" and click Save
 7. and type "install" in the box and then click build
 8. Then click "Build Now"
