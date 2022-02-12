@@ -1,17 +1,20 @@
-//package ...;
+package davidTest;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
+
+import david.*;
+
+import static org.junit.Assert.*;
+
 import java.util.ArrayList;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
 
 public class BookTest {
+    Book book1 = new Book(1, "The Fellowship of the Ring", "J.R.R Tolkien", "High Fantasy", "01234", 111);
 
     @Test
-    @DisplayName("Test: Add book to ArrayList")
     public void testAdd() {
         ArrayList<Object> books = new ArrayList<Object>();
-        Book book1 = new Book(1, "The Fellowship of the Ring", "J.R.R Tolkien", "High Fantasy", "01234", 111);
         books.add(book1);
+        assertTrue(books.contains(book1));
     }
 }
