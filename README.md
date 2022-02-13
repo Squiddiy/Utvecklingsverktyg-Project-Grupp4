@@ -32,6 +32,12 @@ This means setting up JDK, Git and Maven. For this project we will be using java
 10. Then u should have the project compiled on ur computer in ur ".jenkins" folder located at home.
 11. The files should include all the code and a javadoc and 2 jar files.
 
+Running the project - cmd
+
+1. Make the current folder the "target" folder in ur builded project
+2. then write "java -jar project-0.0.1-SNAPSHOT.jar"
+3. Program should launch and u should be able to interact with it in cmd
+
 Documentation 
 
 Check the javadoc that comes with this project after building.
