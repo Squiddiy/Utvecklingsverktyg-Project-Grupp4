@@ -1,5 +1,7 @@
 package Hamodi;
 
+import java.util.Objects;
+
 public class Movie {
 
     private int id;
@@ -45,5 +47,24 @@ public class Movie {
     public void setRating(double rating) {
         this.rating = rating;
     }
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(director, id, name, rating);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Movie other = (Movie) obj;
+		return Objects.equals(director, other.director) && id == other.id && Objects.equals(name, other.name)
+				&& Double.doubleToLongBits(rating) == Double.doubleToLongBits(other.rating);
+	}
+    
 }
 

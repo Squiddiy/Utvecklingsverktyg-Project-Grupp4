@@ -16,17 +16,17 @@ public class MovieCollection {
 	}
 	
 	public void addMovie(Movie movie) {
-		movie.add = movie;
+		this.movie.add(movie);
 		nextPosition++;
 	}
 	
-	public void findMovie(String title) throws MovieNotFoundException
+	public Movie findMovie(String title) throws MovieNotFoundException
 	{
 		title = title.trim();
 		
 		for (int counter = 0; counter < nextPosition; counter++) {
-			if (MovieArray[counter].getTitle().equalsIgnoreCase(title)) {
-				return MovieArray[counter];
+			if (movie.get(counter).getName().equalsIgnoreCase(title)) {
+				return movie.get(counter);
 			}
 		}
 		throw new MovieNotFoundException();
