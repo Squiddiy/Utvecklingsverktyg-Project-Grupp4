@@ -15,7 +15,7 @@ First way - Eclipse
 5. Then browse the root directory and select ur cloned repoistory and make sure the "pom.xml" is checkmarked and click finish
 6. Now u should have all the files under the package Explorer tab
 7. Right click pom.xml and choose : Run as -> Maven Install
-8. Then ur project will get build with a jar file and a javadoc in the target folder of the copied project
+8. Then ur project will get build with a jar file and a javadoc in the target folder of the cloned repoistory
 
 Second way - Jenkins
 
