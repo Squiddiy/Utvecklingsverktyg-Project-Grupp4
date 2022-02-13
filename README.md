@@ -20,7 +20,7 @@ First way - Eclipse
 Second way - Jenkins
 
 1. Make sure u have Jenkins version working and running either through install or with "java -jar jenkins.war"
-2. Setup Jenkins so it works for your computer
+2. Setup Jenkins so it works for your computer.
 This means setting up JDK, Git and Maven. For this project we will be using java 11 and maven 3.3.9 (maven339)
 3. Click "Add new Item" and choose "Freestyle Proejct" give resonable name and click ok
 4. Choose "Git" Under "Source code management" and copy this repo link into the box
