@@ -34,6 +34,6 @@ This means setting up JDK, Git and Maven. For this project we will be using java
 
 Documentation 
 
-Check the javadoc that comes with this project after builiding
-if u go in folder target -> apidocs u should see all some folders and a bunch of htmls
-with the documentation
+Check the javadoc that comes with this project after building.
+if u go in folder target -> apidocs u should see some folders and a bunch of htmls
+that contains the documentation
