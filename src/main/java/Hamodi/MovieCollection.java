@@ -20,12 +20,12 @@ public class MovieCollection {
 		nextPosition++;
 	}
 	
-	public Movie findMovie(String title) throws MovieNotFoundException
+	public Movie findMovie(String name) throws MovieNotFoundException
 	{
-		title = title.trim();
+		name = name.trim();
 		
 		for (int counter = 0; counter < nextPosition; counter++) {
-			if (movie.get(counter).getName().equalsIgnoreCase(title)) {
+			if (movie.get(counter).getName().equalsIgnoreCase(name)) {
 				return movie.get(counter);
 			}
 		}
