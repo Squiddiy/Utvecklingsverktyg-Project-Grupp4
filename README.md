@@ -11,7 +11,7 @@ First way - Eclipse
 1. Copy the repo or download it with either in the website, cmd or Github Desktop. the main priorty is getting the project somewhere on your copmuter
 2. Open Eclipse
 3. Click "import a projects" under the package explorer tab
-4. Choose existing maven project
+4. Choose existing maven project (if u alredy have som projects under the project explorer tab u can right click and then import)
 5. Then browse the root directory and select ur cloned repoistory and make sure the "pom.xml" is checkmarked and click finish
 6. Now u should have all the files under the package Explorer tab
 7. Right click pom.xml and choose : Run as -> Maven Install
