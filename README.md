@@ -4,7 +4,7 @@ A simple collection Program.
 supporting Books, Games and Movies.
 U can add, remove or check for what alredy exists in the current collecction
  
- How to build
+How to build
 
 First way - Eclipse
 
