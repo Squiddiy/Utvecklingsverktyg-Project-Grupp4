@@ -17,4 +17,8 @@ public class Book {
         this.isbn = isbn;
         this.noOfPages = noOfPages;
     }
+    public String getTitle()
+    {
+    	return title;
+    }
 }
