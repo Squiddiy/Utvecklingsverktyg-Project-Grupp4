@@ -23,13 +23,13 @@ Second way - Jenkins
 2. Setup Jenkins so it works for your computer.
 This means setting up JDK, Git and Maven. For this project we will be using java 11 and maven 3.3.9 (maven339)
 3. Click "Add new Item" and choose "Freestyle Proejct" give resonable name and click ok
-4. Choose "Git" Under "Source code management" and copy this repo link into the box
+4. Choose "Git" Under "Source code management" and copy this repo link into "Repository URL"
 5. Under "Branch specifier" change it to "*/main"
-6. Choose ur maven version under "build"
-7. add build step "Invoke top level maven-targets" and click Save
-8. and type "clean package" in the box and then click build
+6. add build step "Invoke top level maven-targets"
+7. Choose ur maven version under "build"
+8. and type "clean package" in the "Goals" box and then click save
 9. Then click "Build Now"
-10. Then u should have the project compiled on ur computer in ur ".jenkins" folder located at home.
+10. Then u should have the project compiled on ur computer in ur ".jenkins/workspace" folder located at ur home directory.
 11. The files should include all the code and a javadoc and 2 jar files.
 
 Running the project - cmd
